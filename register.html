@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<title>Iphone Shop</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="js/ajax_navagation.js"></script>
+<script type="text/javascript" src="http://www.iiwnet.com/templets/niu/js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/username.js"></script>
+<script type="text/javascript" src="js/search.js"></script>
+<script type="text/javascript" src="js/sugestion.js"></script>
+<script type="text/javascript" src="js/items.js"></script>
+<script type="text/javascript" src="js/check1.js"></script>
+<style type="text/css">
+.err{color:#ff0000;}
+.ok{color:#009900;}
+</style>
+
+
+
+<script type="text/javascript">
+//add function to transfer input information to ajax_navagation.js to check the input information
+function ckurname(str){open_url("php/ckurname1.php?username="+str,"urnamemsg");}
+function ckpwd(str)   {open_url("php/ckpwd.php?password="+str,"pwdmsg");}
+function ckpwd2(str) {open_url("php/ckpwd2.php?pwd2="+str+"&password="+document.RegForm.password.value,"pwd2msg");}
+function ckemail(str) {open_url("php/ckemail.php?email="+str,"emailmsg");}
+function cktel(str)   {open_url("php/cktel.php?tel="+str,"telmsg");}
+function ckcity(str){open_url("php/ckscity.php?city="+str,"citymsg");}
+function ckcoun(str){open_url("php/ckcoun.php?coun="+str,"counmsg");}
+//-->
+</script>
+
+</head>
+<body onload="loadXMLDoc();loadXMLDoc1()">
+<div id="wrap">
+
+       <div class="header">
+	   <!--add the search form  --> 
+	   <form  action="" id="fn" name="fn" style="float:right"> 
+				<div> 
+
+				<input type="text" size="26" value="" id="inputString" onkeyup="lookup(this.value);" onblur="fill();" />
+				 <input type="button" value="search" onclick="goto()"/>
+				</div> 
+				<div class="suggestionsBox" id="suggestions" style="display: none;"> 
+
+				<div class="suggestionList" id="autoSuggestionsList"> 
+
+				</div> 
+				</div> 
+       </form> 
+	   <!--search form edd  --> 
+       		<div class="logo"><a href="ass3.html"><img src="images/logo.gif" alt="" title="" border="0" /></a></div>            
+        <div id="menu">
+            <ul>                                                                       
+            <li><a href="ass3.html">home</a></li>
+            <li class="divider"></li>
+            <li><a href="about.html">about us</a></li>
+            <li class="divider"></li>
+            <li><a href="category.html">parts</a></li>
+            <li class="divider"></li>
+            <li><a href="specials.html">premium parts</a></li>
+            <li class="divider"></li>
+            <li><a href="myaccount.html">my accout</a></li>
+            <li class="divider"></li>
+            <li class="selected"><a href="register.html">register</a></li>
+            <li class="divider"></li>
+            <li><a href="details.php">prices</a></li>
+            <li class="divider"></li>
+            <li><a href="contact.php">contact</a></li>
+			
+            </ul>
+        </div>    
+        
+       </div> 
+       
+       <div class="center_content">
+       	<div class="left_content">
+            <div class="title"><span class="title_icon"><img src="images/bullet1.gif" alt="" title="" /></span>Register</div>
+        
+        	<div class="feat_prod_box_details">
+			
+            <p class="details">
+			<!-- input information validation --> 
+			<div style="color:red"><h5> Field with * need to be field in properly.</h5></div>
+             Welcome to our iphone store, pleaae fill in you current information in order to register your account.
+            </p>
+            
+              	<div class="contact_form">
+                <div class="form_subtitle">create new account</div>
+				
+                 <form id="form1" name="RegForm" method="post" action="reg.php" onSubmit="return InputCheck(this)">        
+                    <div class="form_row">
+                    <label class="contact"><strong>Username:</strong></label>
+                    <input name="username" type="text" id="username" size="30"  onblur="ckurname(this.value)" class="contact_input" />
+                    <span id="urnamemsg"class="err">*</span>
+					</div>  
+
+
+                    <div class="form_row">
+                    <label class="contact"><strong>Password:</strong></label>
+                    <input name="password" type="password" id="password"  onblur="ckpwd(this.value)" class="contact_input" />
+					<span id="pwdmsg"class="err">*</span>
+                    </div> 
+                    <div class="form_row">
+                    <label class="contact"><strong>RePassword:</strong></label>
+                    <input name="password2" type="password" id="password2"  onblur="ckpwd2(this.value)" class="contact_input"/>
+                    <span id="pwd2msg"class="err">*</span>
+					</div> 
+					
+                    <div class="form_row">
+                    <label class="contact"><strong>Email:</strong></label>
+                   <input type="text" class="contact_input" name="email" id="email" onblur="ckemail(this.value)" />
+                     <span id="emailmsg"class="err">*</span>
+                    </div>
+                    <div class="form_row">
+                    <label class="contact"><strong>Phone:</strong></label>
+                   <input type="text" class="contact_input" name="tel" id="tel"onblur="cktel(this.value)"/>
+                    <span id="telmsg"class="err">*</span>
+					<div>(in format 0414321206)</div>
+                    </div>
+					<div class="form_row">
+                       <label class="contact"><strong>city:</strong></label>
+                       <input type="text" class="contact_input" name="city" id="city" onblur="ckcity(this.value)"/>
+                    <span id="citymsg"class="err">*</span>
+					</div>  
+					<div class="form_row">
+                       <label class="contact"><strong>country:</strong></label>
+                       <input type="text" class="contact_input" name="coun" id="coun" onblur="ckcoun(this.value)"/>
+                     <span id="counmsg"class="err">*</span>
+					</div>
+
+                    <div class="form_row">
+                        <div class="terms">
+                        <input type="checkbox" name="terms"id="terms" />
+                        I agree to the <a href="#">terms &amp; conditions</a>                        </div>
+                    </div> 
+
+                    
+                    <div class="form_row">
+                    <input type="submit" name="submit" class="register" value="register" />
+                    </div>   
+                  </form>     
+                </div>  
+            
+          </div>	
+            
+              
+
+        <div class="clear"></div>
+        </div><!--end of left content-->
+        
+        <div class="right_content">
+        
+               	<div class="languages_box">
+            <span class="red">Languages:</span>
+            <a href="#"><img src="images/au.gif" width="16" height="11" alt="AU" title="" border="0" /></a>
+                        </div>
+                <div class="currency">
+                <span class="red">Currency: </span>
+                <a href="#"><strong>AUD</strong></a>
+                </div>
+                <div class="currency">
+				<!-- to show the user information if the user login or register --> 
+				<h3>
+                <span class="red" id="myDiv" style="color:red"> </span>
+				</h3>
+				</div>
+                
+              <div class="cart">
+                  <div class="title"><span class="title_icon"><img src="images/cart.gif" alt="" title="" /></span>My cart</div>
+                  <div class="home_cart_content" id="cart">
+                 
+                  </div>
+                  <a href="cart.php" class="view_cart">view cart</a>
+              
+              </div>
+        
+             <div class="title"><span class="title_icon"><img src="images/bullet3.gif" alt="" title="" /></span>About Our Shop</div> 
+             <div class="about">
+             <p>
+             <img src="images/about.gif" alt="" title="" class="right" />
+            Welcome to our shopping center, here you can find either hot products or new products, our shop are including Apple, Sumang,HTC, and Nokiacontain phone, phone relevent products such as Charge Cable, Bluetooth, Wallet, etc. hopping you can have a happy visit in out shopping website.
+             </p>
+             
+             </div>
+             
+             <div class="right_box">
+             
+             	<div class="title"><span class="title_icon"><img src="images/bullet4.gif" alt="" title="" /></span>Promotions</div> 
+                    <div class="new_prod_box">
+                        <a href="apple-Bluetooth Headset.php">Bluetooth Headset</a>
+                        <div class="new_prod_bg">
+                        <span class="new_icon"><img src="images/promo_icon.gif" alt="" title="" /></span>
+                        <a href="apple-Bluetooth Headset.php"><img src="images/thumb1.gif" alt="" title="" class="thumb" border="0" /></a>
+                        </div>           
+                    </div>
+                    
+                    <div class="new_prod_box">
+                        <a href="apple -Charge Sync Cable.ph">Charge Sync Cable</a>
+                        <div class="new_prod_bg">
+                        <span class="new_icon"><img src="images/promo_icon.gif" alt="" title="" /></span>
+                        <a href="apple -Charge Sync Cable.php"><img src="images/thumb2.gif" alt="" title="" class="thumb" border="0" /></a>
+                        </div>           
+                    </div>                    
+                    
+                                 
+             
+             </div>
+             
+             <div class="right_box">
+             
+             	<div class="title"><span class="title_icon"><img src="images/bullet5.gif" alt="" title="" /></span>Categories</div> 
+                
+                <ul class="list">
+                <li><a href="#">accesories</a></li>
+                <li><a href="#">premium parts</a></li>
+                <li><a href="#">specials</a></li>
+                <li><a href="#">best deals</a></li>
+                </ul>
+                
+             	<div class="title"><span class="title_icon"><img src="images/bullet6.gif" alt="" title="" /></span>Partners</div> 
+                
+                <ul class="list">
+                <li><a href="#">Apple</a></li>
+                <li><a href="#">Samsung</a></li>
+                <li><a href="#">Nokia</a></li>
+                <li><a href="#">Motorola</a></li>
+                </ul>      
+             
+                    
+             
+             </div> <!--Add the Catalog can link to the Catalog.xml Linshan Zhang at 26/07/2012-->        
+        
+        </div><!--end of right content-->
+        
+        
+       
+       
+       <div class="clear"></div>
+       </div><!--end of center content-->
+       
+              
+       <div class="footer">
+       	<div class="left_footer"><img src="images/footer_logo.gif" alt="" title="" /><br /> <a href="http://csscreme.com/freecsstemplates/" title="free css templates"><img src="images/csscreme.gif" alt="free css templates" border="0" /></a></div>
+        <div class="right_footer">
+        <a href="#">home</a>
+        <a href="#">about us</a>
+        <a href="#">services</a>
+        <a href="#">privacy policy</a>
+        <a href="#">contact us</a>
+       
+        </div>
+        
+       
+       </div>
+    ©Deakin University, School of Information Technology. This web page has been developed as a student assignment for the unit SIT203: Web Programming. Therefore it is not part of the University's authorised web site. DO NOT USE THE INFORMATION CONTAINED ON THIS WEB PAGE IN ANY WAY</div>
+    <!--Added the statement  Linshan ZHANG at 26/07/2012 -->
+
+
+</body>
+</html>

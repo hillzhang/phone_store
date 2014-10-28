@@ -1,0 +1,34 @@
+CREATE SEQUENCE id
+MINVALUE 1
+START WITH 1
+INCREMENT BY  1
+NOCACHE
+NOCYCLE
+
+DROP TABLE orderinfor;
+CREATE TABLE orderinfor (
+id NUMBER(6) NOT NULL,
+username VARCHAR2(100) NOT NULL,
+name VARCHAR2(100) NOT NULL,
+email VARCHAR2(100) NOT NULL,
+phone VARCHAR2(100) NOT NULL,
+title VARCHAR2(100) NOT NULL ,
+qty VARCHAR2(100) NOT NULL ,
+total DECIMAL(10,2) NOT NULL ,
+time VARCHAR2(100) NOT NULL ,
+ORDER_Date Date,
+unit VARCHAR2(100) NOT NULL ,
+street VARCHAR2(100) NOT NULL ,
+city VARCHAR2(100) NOT NULL ,
+country VARCHAR2(100) NOT NULL ,
+code VARCHAR2(100) NOT NULL ,
+credit VARCHAR2(100) NOT NULL ,
+expire VARCHAR2(100) NOT NULL ,
+holdername VARCHAR2(100) NOT NULL ,
+photo VARCHAR2(100) NOT NULL ,
+PRIMARY KEY (id)
+) ;
+
+INSERT INTO orderinfor VALUES (1,'linshan','Hill','zls115@126.com','0414321206','samsung - Galasy Ace','1', '259.00','2012-09-14 01:11:19','','18','milford','melbourne','australia','3125','2563251452859632','01-01-2013','Linshan','Samsung Galasy Ace.JPG');
+
+commit;

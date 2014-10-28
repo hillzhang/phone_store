@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="catalog.xsl"?>
+
+<CATALOG>
+<PHONE><!-- level 1 nesting -->
+	<Name><!-- level 2 nesting -->
+		 <Brand>Samsung</Brand><!-- level 3 nesting -->
+		 <Model>Galasy Ace</Model>
+	</Name>
+	<Price>$259</Price>
+	<SYSTEM>System: Android 2.2</SYSTEM>
+	<Features>
+	<Feature1>->3G Dual Band</Feature1> 
+	<Feature2>->Powered by Android 2.2</Feature2> 
+	<Feature3>->3.5" Touch Screen</Feature3> 
+	<Feature4>->Talk time: Up to 180 minutes</Feature4> 
+	<Feature5>->Standby time:Up to 250 hours</Feature5> 
+	</Features>
+	<Color>Blcak</Color>
+	
+	</PHONE>
+<PHONE><!-- level 1 nesting -->
+    <Name><!-- level 2 nesting -->
+	<Brand>Samsung</Brand><!-- level 3 nesting -->
+	<Model>Wave 723 Unlocked</Model>
+	</Name>
+	<Price>$179.00</Price>
+	<SYSTEM>System:Samsung bada v1.1</SYSTEM>
+	<Features>Features:
+	<Feature1>->the Wave 723 is an advanced 3G (900/2100MHz) smartphone delivering fantastic value for money</Feature1>
+	<Feature2>-> It features a 3.2" TFT touch-screen display</Feature2>
+	<Feature3>-> 5 MP camera with 4 x digital zoom, bluetooth, FM and MPs player and expandable memory</Feature3>
+	</Features>
+	<Color>Blcak</Color>
+</PHONE>
+<PHONE><!-- level 1 nesting -->
+    <Name><!-- level 2 nesting -->
+		<Brand>Samsung</Brand><!-- level 3 nesting -->
+		<Model> Galaxy S 2 (Unlocked)</Model>
+	</Name>
+	<Price>$548</Price>
+	<SYSTEM>System:Android Platform 2.3</SYSTEM>
+	<Features>Features:
+		<Feature1>->an ultra-slim 8.49mm form factor, a luxurious design and an amazing 4.3" Super Amoled Plus display for enhanced readability</Feature1>
+		<Feature2>->The Dual Core Processor provides unsurpassed speed for faster browsing, quicker multi-tasking, a smoother UI, snappier streaming and highly efficient gaming</Feature2>
+	</Features>
+	<Color>Black</Color>
+</PHONE>
+<PHONE><!-- level 1 nesting -->
+	<Name><!-- level 2 nesting -->
+		<Brand>HTC</Brand><!-- level 3 nesting -->
+		<Model>One X S720E(Unlocked)</Model>
+	</Name>
+	<Price>$530.81</Price>
+	<SYSTEM>System:Android OS, v4.0</SYSTEM>
+	<Features>Features:
+		<Feature1>->MicroSIM card support only</Feature1>
+		<Feature2>->Active noise cancellation with dedicated mic</Feature2>
+		<Feature3>->YouTube, Calendar, Google Talk</Feature3>
+		<Feature4>->TV-out (via MHL A/V link)</Feature4>
+	</Features>
+	<Color>Black,White</Color>
+</PHONE>
+<PHONE><!-- level 1 nesting -->
+	<Name><!-- level 2 nesting -->
+		<Brand>Apple</Brand><!-- level 3 nesting -->
+		<Model>Iphone 4s-16G(Unlocked)</Model>
+	</Name>
+	<Price>$659.00</Price>
+	<SYSTEM>System:OS iOS 5</SYSTEM>
+	<Features>Features:
+		<Feature1>->Siri</Feature1>
+		<Feature2>->Quad-band 3G</Feature2>
+		<Feature3>->Wi-Fi</Feature3>
+		<Feature4>->Powered by ios</Feature4>
+	</Features>
+	<Color>Black,White</Color>
+</PHONE>
+<PHONE><!-- level 1 nesting -->
+	<Name><!-- level 2 nesting -->
+		<Brand>Nokia</Brand><!-- level 3 nesting -->
+		<Model>Lumia 710</Model>
+	</Name>
+	<Price>$310.25</Price>
+	<SYSTEM>System:Windows Phone 7.5 Mango</SYSTEM>
+	<Features>Features:
+		<Feature1>->Latest version of the Windows Phone operating system</Feature1>
+		<Feature2>->Flip to silence - Silence incoming calls by turning your phone face down.</Feature2>
+		<Feature3>->Usability and performance improvements</Feature3>
+		<Feature4>->Internet sharing (Wi-Fi Hotspot) - Share your phone's internet connection over Wi-Fi with up to five other devices or computers.</Feature4>
+	</Features>
+	<Color>White,Black</Color>
+</PHONE>
+<PHONE><!-- level 1 nesting -->
+	<Name><!-- level 2 nesting -->
+		<Brand>Nokia</Brand><!-- level 3 nesting -->
+		<Model>Lumia 900</Model>
+	</Name>
+	<Price>$553.85</Price>
+	<SYSTEM>System:Android OS, v4.0</SYSTEM>
+	<Features>Features:
+		<Feature1>->Latest version of Flip to silence - Silence incoming calls by turning your phone face down.</Feature1>
+		<Feature2>->Download new apps from Marketplace, such as the Contacts Share app to send and receive business cards as text messages.</Feature2>
+		<Feature3>->Enhanced sensitivity for proximity sensor performance</Feature3>
+		<Feature4>->Improvement to your phone's screen colours in low light</Feature4>
+	</Features>
+	<Color>Black,White</Color>
+</PHONE>
+<PHONE><!-- level 1 nesting -->
+	<Name><!-- level 2 nesting -->
+		<Brand>Nokia</Brand><!-- level 3 nesting -->
+		<Model>Nokia Purity HD Stereo Headset by Monster</Model>
+	</Name>
+	<Price>$45.50</Price>
+	<Location>Location:Austalia</Location>
+	<Features>Features:
+		<Feature1>->In-line mic with phone and music controls for easy management of music and phone calls.</Feature1>
+		<Feature2>->Ultra-soft ear cushions make it easier to listen for longer.</Feature2>
+		<Feature3>->Sleek design and 4 bold colours to choose from, with matching headset and cables.</Feature3>
+	</Features>
+	<Color>Black,White,Blue,Red</Color>
+</PHONE>
+<PHONE><!-- level 1 nesting -->
+	<Name><!-- level 2 nesting -->
+		<Brand>Apple</Brand><!-- level 3 nesting -->
+		<Model>Plantronics M100 Bluetooth Headset </Model>
+	</Name>
+	<Price>$59.95</Price>
+	<Location>Location:USA</Location>
+	<Features>Features:
+		<Feature1>->Reduced background noise for clear conversations</Feature1>
+		<Feature2>->Echo cancellation improves listening</Feature2>
+		<Feature3>->Headset battery meter displays on iPhone screen</Feature3>
+		<Feature4>->Apple-exclusive lanyard</Feature4>
+	</Features>
+	<Color>Black,White</Color>
+</PHONE>
+<PHONE><!-- level 1 nesting -->
+	<Name><!-- level 2 nesting -->
+		<Brand>Apple</Brand><!-- level 3 nesting -->
+		<Model>Michael Kors Wallet Clutch Case for iPhone 4S</Model>
+	</Name>
+	<Price>$79.951</Price>
+	<Location>USA</Location>
+	<Features>Features:
+		<Feature1>->Hand-crafted from premium Saffiano leather</Feature1>
+		<Feature2>->Designer clutch wallet with pockets</Feature2>
+		<Feature3>->Michael Kors iconic gold color metal lock hardware</Feature3>
+		<Feature4>->Cutouts for camera lens and proximity sensor</Feature4>
+	</Features>
+	<Color>Black,Coffee,Yellow,Orange</Color>
+</PHONE>
+
+<PHONE><!-- level 1 nesting -->
+	<Name><!-- level 2 nesting -->
+		<Brand>Apple</Brand><!-- level 3 nesting -->
+		<Model>Belkin iPhone Charge Sync Cable</Model>
+	</Name>
+	<Price>$18</Price>
+	<Location>Location:Australia</Location>
+	<Features>Features:
+		<Feature1>->USB 2.0 transfers music and pictures in seconds</Feature1>
+		<Feature2>->4-foot ChargeSync cable</Feature2>
+	</Features>
+	<Color>white</Color>
+</PHONE>
+
+
+</CATALOG>

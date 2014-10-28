@@ -1,0 +1,96 @@
+DROP TABLE catalog;
+
+CREATE TABLE catalog (
+id NUMBER(6) NOT NULL,
+title VARCHAR2(100) NOT NULL ,
+price DECIMAL(10,2) NOT NULL ,
+photo VARCHAR2(100) NOT NULL ,
+url VARCHAR2(100) NOT NULL ,
+PRIMARY KEY (id)
+) ;
+
+INSERT INTO catalog VALUES (1, 'samsung - Galasy Ace', '259.00','Samsung Galasy Ace.JPG','samsung - Galasy Ace.php');
+INSERT INTO catalog VALUES (2, 'samsung - Wave 723','179.00','Samsung Wave 723.jpg','samsung - Wave 723.php');
+INSERT INTO catalog VALUES (3, 'samsung - Galaxy S 2', '548.00','Samsung Galaxy S 2.jpg','samsung - Galaxy S 2.php');
+INSERT INTO catalog VALUES (4, 'htc - One X S720E', '530.81','HTC One X S720E.gif','htc - One X S720E.php');
+INSERT INTO catalog VALUES (5, 'apple - Iphone 4s-16G','659.00','Iphone 4s-16G.jpg','details.php');
+INSERT INTO catalog VALUES (6, 'nokia - Lumia 710', '310.25','Nokia Lumia 710.jpg','nokia - Lumia 710.php');
+INSERT INTO catalog VALUES (7, 'nokia - Lumia 900', '553.85','Nokia Lumia 900.jpg','nokia - Lumia 900.php');
+INSERT INTO catalog VALUES (8, 'nokia Purity HD Stereo Headset ','45.50','HD Stereo.jpg','nokia Purity HD Stereo Headset.php');
+INSERT INTO catalog VALUES (9, 'apple-Bluetooth Headset', '59.95','thumb1.gif','apple-Bluetooth Headset.php');
+INSERT INTO catalog VALUES (10, 'apple -Wallet Clutch Case ','79.95','Wallet Clutch Case .jpg','apple -Wallet Clutch Case.php');
+INSERT INTO catalog VALUES (11, 'apple -Charge Sync Cable', '18.00','thumb2.gif','apple -Charge Sync Cable.php');
+commit;
+
+
+
+CREATE SEQUENCE id
+MINVALUE 1
+START WITH 1
+INCREMENT BY  1
+NOCACHE
+NOCYCLE
+
+
+
+DROP TABLE record;
+CREATE TABLE record (
+id NUMBER(6) NOT NULL,
+username VARCHAR2(100) NOT NULL,
+title VARCHAR2(100) NOT NULL ,
+qty VARCHAR2(100) NOT NULL ,
+total DECIMAL(10,2) NOT NULL ,
+time VARCHAR2(100) NOT NULL ,
+ORDER_Date Date,
+photo VARCHAR2(100) NOT NULL ,
+PRIMARY KEY (id)
+) ;
+
+INSERT INTO record VALUES (1,'linshan', 'samsung - Galasy Ace','1', '259.00','2012-09-14 01:11:19','','Samsung Galasy Ace.JPG');
+
+commit;
+
+
+
+
+DROP TABLE us;
+CREATE TABLE us (
+username VARCHAR2(100) NOT NULL ,
+password VARCHAR2(100) NOT NULL ,
+email VARCHAR2(100) NOT NULL ,
+phone VARCHAR2(100) NOT NULL ,
+city VARCHAR2(100) NOT NULL ,
+country VARCHAR2(100) NOT NULL ,
+PRIMARY KEY (username)
+) ;
+
+INSERT INTO us VALUES ( 'admin', 'admin','zls115@126.com','0414321206','melbourne','australia');
+
+commit;
+
+
+
+
+
+DROP TABLE cart;
+
+CREATE TABLE cart (
+id NUMBER(6) NOT NULL,
+title VARCHAR2(100) NOT NULL ,
+price DECIMAL(10,2) NOT NULL ,
+PRIMARY KEY (id)
+) ;
+INSERT INTO cart VALUES (1, 'samsung - Galasy Ace', '259.00');
+INSERT INTO cart VALUES (2, 'samsung - Wave 723','179.00');
+INSERT INTO cart VALUES (3, 'samsung - Galaxy S 2', '548.00');
+INSERT INTO cart VALUES (4, 'htc - One X S720E', '530.81');
+INSERT INTO cart VALUES (5, 'apple - Iphone 4s-16G','659.00');
+INSERT INTO cart VALUES (6, 'nokia - Lumia 710', '310.25');
+INSERT INTO cart VALUES (7, 'nokia - Lumia 900', '553.85');
+INSERT INTO cart VALUES (8, 'nokia Purity HD Stereo Headset ','45.50');
+INSERT INTO cart VALUES (9, 'apple-Bluetooth Headset', '59.95');
+INSERT INTO cart VALUES (10, 'apple -Wallet Clutch Case ','79.95');
+INSERT INTO cart VALUES (11, 'apple -Charge Sync Cable', '18.00');
+
+commit;
+

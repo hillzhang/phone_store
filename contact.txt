@@ -1,0 +1,16 @@
+
+DROP TABLE contact;
+CREATE TABLE contact (
+id NUMBER(6) NOT NULL,
+username VARCHAR2(100) NOT NULL,
+name VARCHAR2(100) NOT NULL ,
+email VARCHAR2(100) NOT NULL ,
+phone VARCHAR2(100) NOT NULL ,
+company VARCHAR2(100) NOT NULL ,
+message VARCHAR2(100) NOT NULL ,
+PRIMARY KEY (id)
+) ;
+
+INSERT INTO contact VALUES (1,'linshan', 'hill','zls115@126.com', '0414321206','deakin','Thank you for contacting us');
+
+commit;
